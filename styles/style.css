@@ -5,8 +5,10 @@
 
 body {
   background-image: url("https://www.valenciatutors.com/wp-content/uploads/2016/08/blkboard-bkg.jpg")
+  font-size: 30px;
 }
 
 p {
   color: white;
+  font-size: 30px;
 }
