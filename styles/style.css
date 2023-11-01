@@ -1,0 +1,12 @@
+.responsive {
+  width: auto;
+  height: auto;
+}
+
+body {
+  background-image: url("https://www.valenciatutors.com/wp-content/uploads/2016/08/blkboard-bkg.jpg")
+}
+
+p {
+  color: white;
+}
