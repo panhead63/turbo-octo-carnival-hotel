@@ -1,3 +1,4 @@
+//hides or shows password
 $(function() {
     console.log( "ready!" );
   
@@ -16,6 +17,7 @@ $(function() {
   
 });
 
+//dropdown menu 
 var subjectObject = {
   "Math": {
     "600": ["01", "02"],
@@ -81,6 +83,7 @@ function clearResult(){
   document.getElementById("result").value = ''
 }
 
+//json load data
 $('#btnLoadData').click(function() {
     console.log("clicked");
 
@@ -92,7 +95,7 @@ $('#btnLoadData').click(function() {
         success: function(data) {
             console.log(data.firstName);
             $("#noSpaces").val(data.firstName);
-            console.log(data.language);
+            console.log(data.email);
 
             $('input[type=checkbox]').each(function () {
                 if (data.language === $(this).val())
@@ -113,3 +116,7 @@ $('#btnLoadData').click(function() {
         }
     });
 });
+
+function myFunction() {
+  document.getElementById("submit").innerHTML = "Thanks! One of our tutors will email you shortly for details";
+}
