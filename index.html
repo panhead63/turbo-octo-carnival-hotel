@@ -41,6 +41,9 @@
           <li class="nav-item">
             <a class="nav-link" target="_blank" href="https://github.com/panhead63/rachelthompson#readme" style="color:white;">ReadMe</a>
           </li> 
+             <li class="navitem">
+          <button id="btnLoadData" class="btn btn-secondary">load json</button>
+        </li>
               <li class="nav-item">
                 <a class="nav-link" target="_blank" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fpanhead63.github.io%2Fturbo-octo-carnival-hotel%2F" style="color:white;">Check this page's validity</a>
             </li>
@@ -55,11 +58,11 @@
   <form>
     <!--Name Boxes -->
      <div class="form-group">
-      <label style="color:white">First Name</label>
+      <label style="color:white" id="firstName">First Name</label>
       <input type="text" name="username" class="form-control">
     </div>
      <div class="form-group">
-      <label style="color:white">Last Name</label>
+      <label style="color:white" id="lastName">Last Name</label>
       <input type="text" name="username" class="form-control">
     </div>
     
@@ -77,18 +80,19 @@
     
     <!-- Dropdown Menu -->
     <div id="subject" class="dropdown">
-<p><label>Please choose the subject you need tutoring in.</label></p>
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Subject </button>
-    <ul class="dropdown-menu">
-      <li><a href="#">English</a></li>
-      <li><a href="#">Math</a></li>
-      <li><a href="#">Science</a></li>
-      <li><a href="#">History</a></li>
-      <li><a href="#">Music</a></li>
-      <li><a href="#">CIS</a></li>
-      <li><a href="#">Art</a></li>
-    </ul>
-  </div>
+  <form name="form1" id="form1" action="/action_page.php">
+  <label style="color:white">Subjects:</label> <select name="subject" id="subject">
+    <option value="" selected="selected">Select subject</option>
+  </select>
+  <br><br>
+  <label style="color:white">Course Number: </label> <select name="courseNum" id="course">
+    <option value="" selected="selected">Please select subject first</option>
+  </select>
+  <br><br>
+  <label style="color:white">Sections: </label> <select name="sections" id="sections">
+  <option value="" selected="selected">Please select course number first</option>
+  </select>
+</form>
     <br><br>
     
     <!--TextArea -->
