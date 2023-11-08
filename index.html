@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
-  <body class="container-fluid">
+<body class="container-fluid">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Tutors R Us</a>
@@ -41,17 +41,17 @@
           <li class="nav-item">
             <a class="nav-link" target="_blank" href="https://github.com/panhead63/rachelthompson#readme" style="color:white;">ReadMe</a>
           </li> 
+
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fpanhead63.github.io%2Fminiature-chainsaw-golf%2F" style="color:white;">Check this page's validity</a>
+            </li>
              <li class="navitem">
           <button id="btnLoadData" class="btn btn-secondary">load json</button>
         </li>
-              <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fpanhead63.github.io%2Fturbo-octo-carnival-hotel%2F" style="color:white;">Check this page's validity</a>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
-  </body>
   
 <body>
 <div class="container">
@@ -62,7 +62,7 @@
       <input type="text" name="username" class="form-control">
     </div>
      <div class="form-group">
-      <label style="color:white" id="lastName">Last Name</label>
+      <label style="color:white" id-"lastNamesa-">Last Name</label>
       <input type="text" name="username" class="form-control">
     </div>
     
@@ -79,17 +79,17 @@
     <br>
     
     <!-- Dropdown Menu -->
-  <form name="form1" id="form1" action="/action_page.php">
-  <label style="color:white">Subjects:</label> <select name="subject" id="subject">
+    <form name="form1" id="form1" action="/action_page.php">
+<label style="color:white">Subjects:</label> <select name="subject" id="subject">
     <option value="" selected="selected">Select subject</option>
   </select>
   <br><br>
-  <label style="color:white">Course Number: </label> <select name="courseNum" id="course">
+<label style="color:white">Course Number: </label> <select name="courseNum" id="course">
     <option value="" selected="selected">Please select subject first</option>
   </select>
   <br><br>
-  <label style="color:white">Sections: </label> <select name="sections" id="sections">
-  <option value="" selected="selected">Please select course number first</option>
+<label style="color:white">Sections: </label> <select name="sections" id="sections">
+    <option value="" selected="selected">Please select course number first</option>
   </select>
 </form>
     <br><br>
@@ -132,14 +132,10 @@
     
     <!--Submit Button -->
     <div class="form-group">
-      <button class="btn btn-primary">Submit</button>
+      <button class="btn btn-primary" id="submit" onclick="myFunction()">Submit</button>
     </div>
-    
   <!--Reset Button -->
-    <div class="form-group">
-      <button class="btn btn-primary">Reset</button>
-    </div>
-
+<input type="button" value="Reset" onclick="clear()" id="result">
 
   </form>
 </div>
