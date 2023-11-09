@@ -78,7 +78,7 @@ window.onload = function() {
 }
 
 function clearResult(){
-  document.getElementById("result").value = ''
+  document.getElementById("result").value = '';
 }
 
 import data from './demo.json';
