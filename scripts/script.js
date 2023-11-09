@@ -81,39 +81,8 @@ function clearResult(){
   document.getElementById("result").value = ''
 }
 
-$('#btnLoadData').click(function() {
-    console.log("clicked");
-
-    let jsonURL = "https://barrycumbie.github.io/376-india-lab/demo.json";
-
-    $.ajax({
-        url: jsonURL,
-        dataType: "json",
-        success: function(data) {
-            console.log(data.firstName);
-            $("#noSpaces").val(data.firstName);
-            console.log(data.email);
-
-            $('input[type=checkbox]').each(function () {
-                if (data.language === $(this).val())
-                {
-                  $(this).prop('checked', true)
-                    console.log($(this));
-               }
-
-            });
-
-            $.each(data, function (key, val) {
-                //step through results
-                console.log(key, val);
-           
-                $(`#${key}`).val(val);
-                
-            });
-        }
-    });
-});
-
+import data from './demo.json';
+console.log(data);
 
 function myFunction() {
   document.getElementById("submit").innerHTML = "Thanks! One of our tutors will email you shortly for details";
