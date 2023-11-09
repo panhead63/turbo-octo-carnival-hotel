@@ -81,9 +81,6 @@ function clearResult(){
   document.getElementById("result").value = '';
 }
 
-import data from './demo.json';
-console.log(data);
-
 function myFunction() {
   document.getElementById("submit").innerHTML = "Thanks! One of our tutors will email you shortly for details";
 }
